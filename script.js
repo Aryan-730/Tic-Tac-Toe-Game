@@ -74,9 +74,11 @@ const checkWinner = () => {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
                 console.log("Winner is", pos1Val);
                 showWinner(pos1Val);
+                return;
             }
         }
     }
+    checkDraw();
 };
 
 const enableBox = () => {
@@ -88,3 +90,22 @@ const enableBox = () => {
 
 newBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+
+const checkDraw = () => {
+    
+    let count = 0;
+
+    boxes.forEach(box => {
+        if (box.innerText != ""){
+            count ++; 
+        }
+    });
+
+    if (count === 9 ){
+        msgTitle.innerText = "Its a Draw!!";
+        msgContainer.classList.remove("hide");
+        newBtn.classList.remove("hide");
+        disableBox();
+        turnMsg.innerText = "";
+    }
+};
