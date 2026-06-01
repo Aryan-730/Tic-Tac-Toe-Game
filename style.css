@@ -82,3 +82,7 @@ body {
 .hide {
     display: none;
 }
+
+.turn-msg{
+    margin : 5vmin;
+}

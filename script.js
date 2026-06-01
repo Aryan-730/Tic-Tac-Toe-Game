@@ -3,7 +3,7 @@ let resetBtn = document.querySelector("#reset-btn");
 let msgContainer = document.querySelector(".msg-container");
 let newBtn = document.querySelector("#new-game-btn");
 let msgTitle = document.querySelector(".msg-title");
-let turnDectection = document.querySelector("turn-detect");
+let turnMsg = document.querySelector(".turn-msg");
 
 
 let turnO = true;
@@ -25,10 +25,12 @@ boxes.forEach((box) => {
             box.innerText = "O";
             box.classList.add("O");
             turnO = false;
+            turnMsg.innerText = "Player X's turn ";
         } else {
             box.innerText = "X";
             box.classList.add("X");
             turnO = true;
+            turnMsg.innerText = "Player O's turn";
         }
         box.disabled = true;
 
@@ -44,7 +46,8 @@ const resetGame = () => {
     boxes.forEach(box => {
         box.classList.remove("X");
         box.classList.remove("O");
-    })
+    });
+    turnMsg.innerText = "Player O's turn";
 };
 
 const disableBox = () => {
@@ -58,6 +61,7 @@ const showWinner = (winner) => {
     msgContainer.classList.remove("hide");
     newBtn.classList.remove("hide");
     disableBox();
+    turnMsg.innerText = "";
 };
 
 const checkWinner = () => {
