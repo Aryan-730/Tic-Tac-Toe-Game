@@ -4,6 +4,7 @@ let msgContainer = document.querySelector(".msg-container");
 let newBtn = document.querySelector("#new-game-btn");
 let msgTitle = document.querySelector(".msg-title");
 let turnMsg = document.querySelector(".turn-msg");
+let websiteBtn = document.querySelector("#website-btn");
 
 
 let turnO = true;
@@ -88,3 +89,6 @@ const enableBox = () => {
 
 newBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
+websiteBtn.addEventListener("click", () => {
+    window.open("https://aryankedar.niat.tech/", "_blank");
+});
