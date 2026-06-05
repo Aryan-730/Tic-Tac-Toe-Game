@@ -40,7 +40,6 @@ Click Reset Game to restart at any time
 
 🔮 Future Plans
 
- Draw detection
  Winning cells highlight animation
  AI opponent using Minimax algorithm
  Difficulty levels (Easy / Medium / Unbeatable)

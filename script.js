@@ -75,9 +75,11 @@ const checkWinner = () => {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
                 console.log("Winner is", pos1Val);
                 showWinner(pos1Val);
+                return;
             }
         }
     }
+    checkDraw();
 };
 
 const enableBox = () => {
