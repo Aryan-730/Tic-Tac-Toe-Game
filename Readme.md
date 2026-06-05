@@ -52,7 +52,7 @@ Click Reset Game to restart at any time
 Aryan Kedar
 Github [https://github.com/Aryan-730/Tic-Tac-Toe-Game.git] 
 LinkedIn [https://www.linkedin.com/in/aryan-kedar-9a88b4377/]
-Website [https://www.tictactoearyan.niat.tech]
+Website [tictactoearyan.niat.tech]
 
 📄 License
 This project is open source and available under the MIT License.
