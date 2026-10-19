@@ -92,5 +92,5 @@ const enableBox = () => {
 newBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
 websiteBtn.addEventListener("click", () => {
-    window.open("https://aryankedar.niat.tech/", "_blank");
+    window.open("https://portfolio-website-delta-ten-23.vercel.app/", "_blank");
 });
